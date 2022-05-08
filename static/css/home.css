@@ -1,0 +1,185 @@
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img , video {
+    max-width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: white;
+    }
+
+    .pure-menu-link:hover {
+        background-color: black;
+    }
+}
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+    
+}
+
+/* navigation rule*/
+nav {
+    padding: 1rem;
+    border: 1.33px solid #F05454;
+    width: 60%;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #171717;
+    font-size: 1rem;
+}
+
+nav a:hover{
+    color: #F05454;
+    text-decoration: underline;
+}
+
+
+nav li:first-child{
+    flex-basis: 100%;
+    text-align: center;
+
+}
+
+
+nav li:first-child img {
+    width: 130px;
+    border-radius: 100px;
+    height: 130px;
+    object-fit: cover;
+    filter: grayscale(50%);
+}
+
+nav .f-h {
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: 'Oxygen Mono', monospace;
+}
+
+nav p , .f-h {
+    text-align: center;
+    line-height: 1;
+}
+
+footer {
+    padding: 2rem;
+    text-align: center;
+}
+/*media query for navigation menu */
+@media screen and (min-width:852px) {
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        
+    }
+
+    nav li:first-child {
+        flex-basis: auto;
+    }
+}
+
+@media screen and (max-width:485px){
+    nav ul {
+        gap: 2rem;
+    }
+    
+ }
+
+@media screen and (max-width:1020px){
+   nav {
+       width: 70%;
+   }
+   
+}
+
+@media screen and (max-width:873px){
+    nav {
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+/* ending*/
+#description {
+    margin-top: 3%;
+    margin-left: 18.5%;
+    line-height: 1.5;
+}
+
+#description a {
+    color: #258cdb;
+    text-decoration: none;
+}
+#description h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#description p {
+    width: 70%;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+}
+
+iframe {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    height: 400px;
+}
+
+@media screen and (max-width:485px){
+    nav ul {
+        gap: 2rem;
+    }
+    
+
+    #description p {
+        width: 100%;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.2em;
+    }
+
+    #description {
+        margin-top: 3%;
+        margin-left: 5%;
+    }
+
+    iframe {
+        margin-top: 3%;
+        width: 100%;
+        height: 200px;
+    }
+    
+ }
+
+
+
