@@ -14,8 +14,8 @@ img , video {
         color: white;
     }
 
-    .pure-menu-link:hover {
-        background-color: black;
+    a {
+        color: white;
     }
 }
 @media (prefers-color-scheme: light) {
@@ -23,6 +23,7 @@ img , video {
         background-color: white;
         color: black;
     }
+
 }
 
 body {
